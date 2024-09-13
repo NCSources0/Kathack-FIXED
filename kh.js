@@ -1,7 +1,7 @@
 /*
 Copyright Alex Leone, David Nufer, David Truong, 2011-03-11. kathack.com
 
-javascript:var i,s,ss=['https://ncsources0.github.io/Kathack-FIXED/kh.js','https://code.jquery.com/jquery-3.7.1.min.js'];for(i=0;i!=ss.length;i++){s=document.createElement('script');s.src=ss[i];document.body.appendChild(s);}void(0);
+javascript:var i,s,ss=['https://ncsources0.github.io/Kathack-FIXED/kh.js','https://code.jquery.com/jquery-3.7.1.min.js'];for(i=0;i!=ss.length;i++){s=document.createElement('script');s.src=ss[i];document.body.appendChild(s)}
 
 */
 var BORDER_STYLE = "1px solid #bbb",
