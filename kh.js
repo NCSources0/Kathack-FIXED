@@ -542,8 +542,8 @@ function PlayerBall(parentNode, stickyNodes, ballOpts, sounds) {
         canvas_el.style.left = (x - radius) + 'px';
         canvas_el.style.top = (y - radius) + 'px';
         if (radius != lastR) {
-            canvas_el.width = 2 * radius + 1;
-            canvas_el.height = 2 * radius + 1;
+            canvas_el.width = 2 * radius;
+            canvas_el.height = 2 * radius;
             lastR = radius;
         }
         /* draw white circle. */
