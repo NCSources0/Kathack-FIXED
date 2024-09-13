@@ -356,7 +356,7 @@ function PlayerBall(parentNode, stickyNodes, ballOpts, sounds) {
         canvas_el = document.createElement('canvas');
         canvas_el.width = radius * 2;
         canvas_el.height = radius * 2;
-        canvas_el.style.cssText = 'position: absolute; z-index: 500;';
+        canvas_el.style.cssText = 'position: absolute; z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;';
         parentNode.appendChild(canvas_el);
         canvas_ctx = canvas_el.getContext('2d');
         
@@ -726,7 +726,7 @@ function whenAllLoaded(gameDiv, popup, stickyNodes) {
                 bgmusic = document.createElement('audio');
                 bgmusic.id = 'khbgmusic';
                 bgmusic.loop = 'loop';
-                bgmusic.src = 'https://ncsources0.github.io/katamari.mp3';
+                bgmusic.src = 'https://ncsources0.github.io/Kathack-FIXED/katamari.mp3';
                 gameDiv.appendChild(bgmusic);
             }
             bgmusic.play();
@@ -760,7 +760,7 @@ font-size:13px;\
 text-align:left;\
 z-index:501;';
     d.innerHTML = '<h1 style="font-size:16pt">\
-<a href="http://kathack.com/" style="color:blue;text-decoration:none;">\
+<a href="http://ncsources0.github.io/Kathack-FIXED" style="color:blue;text-decoration:none;">\
 Katamari!</a></h1>\
 <button style="position:absolute;top:0;right:0;">X</button>\
 <p>Controls: Hold down <b><select id="mouseb">\
@@ -772,10 +772,10 @@ Katamari!</a></h1>\
 <input id="bgmusicc" type="checkbox" checked="checked" /></label></div>\
 <div style="text-align:right; color:gray;">\
 <label>Katamari Color: <select id="khcolor">\
-<option value="#ff0000" style="background-color:#ff0000;color:#ff0000"> r </option>\
-<option value="#00ff00" style="background-color:#00ff00;color:#00ff00"> g </option>\
-<option value="#0000ff" style="background-color:#0000ff;color:#0000ff"> b </option>\
-<option selected="selected" value="#7D26CD" style="background-color:#7D26CD;color:#7D26CD"> p \
+<option value="#ff0000" style="background-color:#ff0000;color:#ff0000"> Red </option>\
+<option value="#00ff00" style="background-color:#00ff00;color:#00ff00"> Green </option>\
+<option value="#0000ff" style="background-color:#0000ff;color:#0000ff"> Blue </option>\
+<option selected="selected" value="#7D26CD" style="background-color:#7D26CD;color:#7D26CD"> Purple \
 </option></select></label><br />\
  <label title="Lower this if the game gets slow.">\
 Max Attached Objects: <select id="maxAtt">\
