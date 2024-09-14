@@ -4,7 +4,7 @@ Copyright Alex Leone, David Nufer, David Truong, 2011-03-11. kathack.com
 javascript:var i,s,ss=['https://ncsources0.github.io/Kathack-FIXED/kh.js','https://code.jquery.com/jquery-3.7.1.min.js'];for(i=0;i!=ss.length;i++){s=document.createElement('script');s.src=ss[i];document.body.appendChild(s)}
 
 */
-var BORDER_STYLE = "1px solid #bbb",
+var BORDER_STYLE = "",
 	CSS_TRANSFORM = null,
 	CSS_TRANSFORM_ORIGIN = null,
 	POSSIBLE_TRANSFORM_PREFIXES = ['-webkit-', '-moz-', '-o-', '-ms-', ''],
@@ -771,13 +771,9 @@ Katamari!</a></h1>\
 <div><label>Background Music? \
 <input id="bgmusicc" type="checkbox" checked="checked" /></label></div>\
 <div style="text-align:right; color:gray;">\
-<label>Katamari Color: <select id="khcolor">\
-<option value="#ff0000" style="background-color:#ff0000;color:#000"> Red </option>\
-<option value="#00ff00" style="background-color:#00ff00;color:#000"> Green </option>\
-<option value="#0000ff" style="background-color:#0000ff;color:#000"> Blue </option>\
-<option selected="selected" value="#7D26CD" style="background-color:#7D26CD;color:#000"> Purple \
-</option></select></label><br />\
- <label title="Lower this if the game gets slow.">\
+<label>Katamari Color: <input id="khcolor" type="text" size="6" value="#7D26CD" />\
+></select></label><br />\
+<label title="Lower this if the game gets slow.">\
 Max Attached Objects: <input id="maxAtt" type="text" size="6" value="100" />\
 </label><br />\
 <label title="How much to grow when an object is picked up.">\
