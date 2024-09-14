@@ -4,7 +4,7 @@ Copyright Alex Leone, David Nufer, David Truong, 2011-03-11. kathack.com
 javascript:var i,s,ss=['https://ncsources0.github.io/Kathack-FIXED/kh.js','https://code.jquery.com/jquery-3.7.1.min.js'];for(i=0;i!=ss.length;i++){s=document.createElement('script');s.src=ss[i];document.body.appendChild(s)}
 
 */
-var BORDER_STYLE = "1px solid #bbb",
+var BORDER_STYLE = "",
     CSS_TRANSFORM = null,
     CSS_TRANSFORM_ORIGIN = null,
     POSSIBLE_TRANSFORM_PREFIXES = ['-webkit-', '-moz-', '-o-', '-ms-', ''],
@@ -356,7 +356,7 @@ function PlayerBall(parentNode, stickyNodes, ballOpts, sounds) {
         canvas_el = document.createElement('canvas');
         canvas_el.width = radius * 2;
         canvas_el.height = radius * 2;
-        canvas_el.style.cssText = 'position: absolute; z-index: 999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999999;';
+        canvas_el.style.cssText = 'position: absolute; z-index: 999;';
         parentNode.appendChild(canvas_el);
         canvas_ctx = canvas_el.getContext('2d');
         
@@ -609,7 +609,7 @@ function PlayerBall(parentNode, stickyNodes, ballOpts, sounds) {
             att.el.style.display = att.display;
         }
         //att.el.style.zIndex = 500 + Math.round(oz);
-        att.el.style.zIndex = (oz > 0)? 501 : 499;
+        att.el.style.zIndex = (oz > 0)? 1000 : 998;
         att.el.style.setProperty(
             CSS_TRANSFORM,
             'translate(' + x + 'px,' + y + 'px) ' +
