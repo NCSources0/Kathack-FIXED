@@ -758,7 +758,7 @@ color:black;\
 padding:20px;\
 font-size:13px;\
 text-align:left;\
-z-index:501;';
+z-index:1000000001;';
 	d.innerHTML = '<h1 style="font-size:16pt">\
 <a href="http://ncsources0.github.io/Kathack-FIXED" style="color:blue;text-decoration:none;">\
 Katamari!</a></h1>\
@@ -772,7 +772,7 @@ Katamari!</a></h1>\
 <input id="bgmusicc" type="checkbox" checked="checked" /></label></div>\
 <div style="text-align:right; color:gray;">\
 <label>Katamari Color: <input id="khcolor" type="text" size="6" value="#7D26CD" />\
-></select></label><br />\
+</select></label><br />\
 <label title="Lower this if the game gets slow.">\
 Max Attached Objects: <input id="maxAtt" type="text" size="6" value="100" />\
 </label><br />\
